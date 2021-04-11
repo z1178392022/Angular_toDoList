@@ -1,0 +1,39 @@
+#overall_c {
+  min-height: 603px;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+.div_link {
+  width: 350px;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid red;
+}
+.img_one {
+  width: 150%;
+  height: 400px;
+  position: relative;
+  right: 80px;
+  z-index: -1;
+}
+.home_button {
+  width: 350px;
+  height: 40px;
+  position: absolute;
+  margin-top: -20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.home_button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+#img_two {
+  width: 101%;
+  z-index: -1;
+  right: 0px;
+}

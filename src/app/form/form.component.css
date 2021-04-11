@@ -1,0 +1,46 @@
+li {
+  list-style: none;
+  line-height: 50px;
+}
+h2 {
+  text-align: center;
+}
+.people_list {
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid red;
+}
+#username {
+  width: 320px;
+  height: 28px;
+}
+button {
+  width: 100px;
+  height: 30px;
+  float: right;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+textarea {
+  padding: 10px;
+}
+#sex {
+  float: right;
+  width: 180px;
+  height: 50px;
+}
+#sex1,
+#sex2 {
+  width: 40px;
+}
+#city_input {
+  width: 90%;
+}
+.check {
+  width: 20px;
+  margin-left: 10px;
+}
+#lastwords {
+  width: 90%;
+}

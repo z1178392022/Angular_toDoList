@@ -1,0 +1,68 @@
+<div class="people_list">
+  <h2>Form System</h2>
+  <ul>
+    <li>
+      Name:
+      <input type="text" id="username" [(ngModel)]="peopleinfo.username" />
+    </li>
+
+    <li>
+      Sexy:
+      <div id="sex">
+        <input
+          type="radio"
+          id="sex1"
+          value="Male"
+          [(ngModel)]="peopleinfo.sex"
+          name="sex"
+        /><label for="sex1">Male</label>
+      </div>
+      <div id="sex">
+        <input
+          type="radio"
+          id="sex2"
+          value="Female"
+          [(ngModel)]="peopleinfo.sex"
+          name="sex"
+        /><label for="sex2">Female</label>
+      </div>
+    </li>
+    <li>
+      City:
+      <select type="select" [(ngModel)]="peopleinfo.city" id="city_input">
+        <option [value]="item" *ngFor="let item of peopleinfo.citys"
+          >{{item}}</option
+        >
+      </select>
+    </li>
+    <li>
+      Hobby:
+      <span *ngFor="let item of peopleinfo.hobby; let key=index">
+        <input
+          type="checkbox"
+          [id]="'check'+key"
+          class="check"
+          [(ngModel)]="item.checked"
+        />
+        <label [for]="'check'+key" id="forcheck">{{item.title}}</label>
+      </span>
+    </li>
+    <li>
+      Messages:<textarea
+        name="name"
+        rows="3"
+        cols="50"
+        [(ngModel)]="peopleinfo.lastwords"
+        id="lastwords"
+      ></textarea>
+    </li>
+    <br /><br /><br /><br />
+    <button type="button" (click)="dosubmit()">Save</button>
+  </ul>
+  <pre>{{peopleinfo | json}}</pre>
+</div>
+
+<h2>
+  I donnot know how to set section 'Hobby' into local strage since the checked
+  statue cannot be simply reference by "this.Formsystem.hobby.checked".
+</h2>

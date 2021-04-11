@@ -1,0 +1,64 @@
+a {
+  text-decoration: none;
+}
+.overall_c {
+  width: 100%;
+}
+.p3contact {
+  background-color: black;
+  height: auto;
+  margin-top: 100px;
+  color: white;
+  text-align: center;
+  width: 90%;
+  position: relative;
+  margin: auto;
+  padding: 20px 20px;
+  min-width: 600px;
+}
+.p3info1 {
+  background-color: white;
+  border: 1px white solid;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.p3info3 {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.p3info4 {
+  font-size: 20px;
+  height: 150px;
+}
+.p3info5 {
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin-right: 20px;
+  margin-top: 30px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.p3info6 {
+  width: 100%;
+  height: 100%;
+}
+.p3info7 {
+  position: absolute;
+  margin-left: 60px;
+  width: 600px;
+}
+.p3info8 {
+  bottom: 0px;
+}
+.p3info9 {
+  color: white;
+}
+#follow {
+  width: 200px;
+  left: 10px;
+  position: absolute;
+  padding-top: 10px;
+  font-size: 25px;
+}

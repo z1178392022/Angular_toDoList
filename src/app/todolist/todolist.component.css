@@ -1,0 +1,35 @@
+#overall_c {
+  min-height: 603px;
+}
+li {
+  width: 100%;
+}
+.search {
+  width: 400px;
+  margin: 20px auto;
+}
+.Ione {
+  margin-bottom: 20px;
+  width: 300px;
+  height: 32px;
+}
+.Bone {
+  height: 32px;
+  width: 80px;
+}
+h2,
+h3 {
+  text-align: center;
+}
+* {
+  list-style: none;
+}
+.check_input {
+  width: 30px;
+}
+.ul_height {
+  min-height: 100px;
+}
+#todo_button {
+  right: 0px;
+}

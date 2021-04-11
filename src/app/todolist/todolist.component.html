@@ -1,0 +1,60 @@
+<div id="overall_c">
+  <h2>Todo List</h2>
+  <div class="search">
+    <input
+      type="text"
+      name=""
+      value=""
+      (keyup)="doAdd($event)"
+      [(ngModel)]="goingtodo"
+      class="Ione"
+    />
+    <button (click)="doSearch_two()" class="Bone">Search</button>
+    <hr />
+    <h3>Going to do</h3>
+    <div class="ul_height">
+      <li
+        *ngFor="let item of todolist; let key=index;"
+        [hidden]="item.status==1"
+      >
+        <input
+          type="checkbox"
+          [(ngModel)]="item.status"
+          class="check_input"
+          (change)="checkboxchanged()"
+        />{{item.title}}
+        <button
+          class="check_input"
+          type="button"
+          name="button"
+          (click)="deleteTodo(key)"
+          id="todo_button"
+        >
+          X
+        </button>
+      </li>
+    </div>
+    <h3>Done</h3>
+    <div class="ul_height">
+      <li
+        *ngFor="let item of todolist; let key=index;"
+        [hidden]="item.status==0"
+      >
+        <input
+          type="checkbox"
+          [(ngModel)]="item.status"
+          class="check_input"
+          (change)="checkboxchanged()"
+        />{{item.title}}
+        <button
+          class="check_input"
+          type="button"
+          name="button"
+          (click)="deleteTodo(key)"
+        >
+          X
+        </button>
+      </li>
+    </div>
+  </div>
+</div>
